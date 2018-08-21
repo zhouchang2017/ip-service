@@ -13,7 +13,7 @@ see [egg docs][egg] for more detail.
 通过ip获取访问地址
 
 ```
-http://127.0.0.1:7001/?ip=119.147.146.189
+http://127.0.0.1:7001/api/resolve?ip=119.147.146.189
 
 ```
 - params
@@ -40,6 +40,9 @@ ip:string
     area: 50
 }
 ```
+
+### UpdateIpDb
+`yarn updatedb` or `npm run updatedb`
 
 ### Development
 

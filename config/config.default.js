@@ -7,10 +7,11 @@ module.exports = appInfo => {
   config.keys = appInfo.name + '_1534838426087_4216';
 
   // add your config here
-  config.middleware = [];
+  config.middleware = ['errorHandler'];
 
   return config;
 };
+
 
 exports.cluster = {
   listen: {

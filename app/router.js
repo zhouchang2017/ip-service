@@ -5,6 +5,6 @@
  */
 module.exports = app => {
   const { router, controller } = app;
-  router.get('/', controller.home.index);
-  router.get('/is_abroad',controller.home.isAbroad);
+  router.get('/api/resolve', controller.home.index);
+  router.get('/api/is_abroad',controller.home.isAbroad);
 };

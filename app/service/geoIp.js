@@ -10,9 +10,15 @@ class GenIpService extends Service {
   }
 
   isAbroad(ip) {
-    const {country} = this.find(ip)
-    return country!=='CN'
+    try{
+      const {country} = this.find(ip)
+      return country!=='CN'
+    }catch(err){
+      return false
+    }
+    
   }
+
 }
 
 module.exports = GenIpService;
