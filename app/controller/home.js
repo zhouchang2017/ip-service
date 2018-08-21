@@ -10,7 +10,7 @@ class HomeController extends Controller {
     };
     ctx.validate(createRule,ctx.request.query);
     const ip = ctx.request.query.ip
-    this.ctx.body = service.geoIp.find(ip);
+    this.success(service.geoIp.find(ip));
   }
 
   isAbroad() {
@@ -20,7 +20,14 @@ class HomeController extends Controller {
     };
     ctx.validate(createRule,ctx.request.query);
     const ip = ctx.request.query.ip
-    this.ctx.body = service.geoIp.isAbroad(ip);
+    this.success(service.geoIp.isAbroad(ip));
+  }
+
+  success(data,code = 200){
+    this.ctx.body = {
+      status:code,
+      data
+    }
   }
 }
 
