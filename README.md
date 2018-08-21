@@ -8,6 +8,39 @@ ip-service
 
 see [egg docs][egg] for more detail.
 
+### Useage
+
+通过ip获取访问地址
+
+```
+http://127.0.0.1:7001/?ip=119.147.146.189
+
+```
+- params
+ip:string
+
+- response
+
+```
+{
+    range: - [
+        2006155264,
+        2006171647
+    ],
+    country: "CN",
+    region: "AS",
+    eu: "0",
+    timezone: "Asia/Shanghai",
+    city: "Guangzhou",
+    ll: - [
+        23.1167,
+        113.25
+    ],
+    metro: 0,
+    area: 50
+}
+```
+
 ### Development
 
 ```bash
