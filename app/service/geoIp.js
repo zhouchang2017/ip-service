@@ -9,12 +9,12 @@ class GenIpService extends Service {
     return geoip.lookup(ip);
   }
 
-  isAbroad(ip) {
+  isChina(ip) {
     try{
       const {country} = this.find(ip)
-      return country!=='CN'
+      return country ==='CN'
     }catch(err){
-      return false
+      return true
     }
     
   }

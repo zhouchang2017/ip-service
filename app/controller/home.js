@@ -20,7 +20,7 @@ class HomeController extends Controller {
     };
     ctx.validate(createRule,ctx.request.query);
     const ip = ctx.request.query.ip
-    this.success(service.geoIp.isAbroad(ip));
+    this.success(service.geoIp.isChina(ip));
   }
 
   success(data,code = 200){
