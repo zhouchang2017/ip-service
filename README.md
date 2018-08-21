@@ -8,6 +8,12 @@ ip-service
 
 see [egg docs][egg] for more detail.
 
+### Online
+
+```
+http://119.29.214.232:7001/api/resolve?ip=119.147.146.189
+```
+
 ### Useage
 
 通过ip获取访问地址
